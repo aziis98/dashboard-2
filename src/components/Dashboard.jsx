@@ -38,10 +38,10 @@ function useDateTime() {
 
 export const Dashboard = ({}) => {
     const [date, time] = useDateTime()
-    const [dark, setDark] = useState(Boolean(localStorage.getItem('dark')) ?? false)
+    const [dark, setDark] = useState(localStorage.getItem('dark') === 'true')
 
     useEffect(() => {
-        localStorage.setItem('dark', dark)
+        localStorage.setItem('dark', `${dark}`)
         document.body.classList.toggle('dark', dark)
     }, [dark])
 
