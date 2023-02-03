@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Blank Tab",
+    "description": "Custom Blank Tab",
+    "version": "0.0.0.1",
+    "permissions": ["bookmarks", "storage", "sessions", "tabs"],
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    },
+    "background": {
+        "service_worker": "worker.js"
+    }
+}
