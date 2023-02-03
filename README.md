@@ -1,7 +1,7 @@
 # New Tab Dashboard
 
 <p align="center">
-<img src="screenshots/screenshot-1.png" width="75%" alt="screenshot-1">
+<img src="/raw/screenshots/screenshot-1.png" width="75%" alt="screenshot-1">
 </p>
 
 A simple custom new tab chrome extension
