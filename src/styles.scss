@@ -136,9 +136,18 @@ button {
             border-radius: 0.5rem;
             padding: 0.5rem;
 
-            img {
+            a {
+                display: grid;
+                align-content: center;
+
                 width: 100%;
                 height: 100%;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    // height: 100%;
+                }
             }
 
             &:hover {
