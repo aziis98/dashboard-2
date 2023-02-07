@@ -82,6 +82,11 @@ export const Dashboard = ({}) => {
                         <img src="/lobster-news.png" alt="lobster" />
                     </a>
                 </div>
+                <div class="app">
+                    <a href="https://www.youtube.com/">
+                        <img src="/youtube.svg" alt="youtube" />
+                    </a>
+                </div>
             </div>
             <div class="spacer" style={{ height: '4rem' }}></div>
         </main>
