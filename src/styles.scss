@@ -12,7 +12,7 @@ body {
 
     color: #333;
 
-    font-family: 'Open SansVariable', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
@@ -99,26 +99,6 @@ button {
             font-size: 2rem;
             font-weight: 300;
         }
-
-        // .left {
-        //     white-space: pre;
-
-        //     position: absolute;
-        //     right: 1rem;
-        //     height: 100%;
-
-        //     transform: translate(0, -0.25rem);
-        // }
-
-        // .right {
-        //     white-space: pre;
-
-        //     position: absolute;
-        //     left: 1rem;
-        //     height: 100%;
-
-        //     transform: translate(0, -0.25rem);
-        // }
     }
 
     .bookmarks {
@@ -127,7 +107,7 @@ button {
 
         justify-content: center;
 
-        max-width: 75ch;
+        max-width: 90ch;
 
         gap: 1rem;
 
