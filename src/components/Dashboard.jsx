@@ -1,43 +1,7 @@
 import { useEffect, useState } from 'preact/hooks'
-
-function getDate() {
-    const d = new Date()
-
-    const month = (d.getMonth() + 1).toString().padStart(2, '0')
-    const day = d.getDate().toString().padStart(2, '0')
-
-    return `${d.getFullYear()}-${month}-${day}`
-}
-
-function getTime() {
-    const d = new Date()
-    const hours = d.getHours().toString().padStart(2, '0')
-    const minutes = d.getMinutes().toString().padStart(2, '0')
-    const seconds = d.getSeconds().toString().padStart(2, '0')
-
-    return `${hours}:${minutes}:${seconds}`
-}
-
-function useDateTime() {
-    const [date, setDate] = useState(getDate())
-    const [time, setTime] = useState(getTime())
-
-    useEffect(() => {
-        const t = setInterval(() => {
-            setDate(getDate())
-            setTime(getTime())
-        }, 1000)
-
-        return () => {
-            clearInterval(t)
-        }
-    })
-
-    return [date, time]
-}
+import { Clock } from './Clock.jsx'
 
 export const Dashboard = ({}) => {
-    const [date, time] = useDateTime()
     const [dark, setDark] = useState(localStorage.getItem('dark') === 'true')
 
     useEffect(() => {
@@ -52,10 +16,7 @@ export const Dashboard = ({}) => {
                     <span class="material-symbols-outlined">light_mode</span>
                 </button>
             </div>
-            <div class="clock">
-                <div class="left">{date}</div>
-                <div class="right">{time}</div>
-            </div>
+            <Clock />
             <div class="bookmarks">
                 <div class="app">
                     <a href="https://google.com/">
@@ -88,7 +49,7 @@ export const Dashboard = ({}) => {
                     </a>
                 </div>
             </div>
-            <div class="spacer" style={{ height: '4rem' }}></div>
+            <div class="spacer"></div>
         </main>
     )
 }

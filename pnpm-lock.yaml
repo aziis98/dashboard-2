@@ -1,12 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/open-sans': ^4.5.14
   '@preact/preset-vite': ^2.5.0
   preact: ^10.11.3
   sass: ^1.58.0
   vite: ^4.1.1
 
 dependencies:
+  '@fontsource/open-sans': 4.5.14
   preact: 10.11.3
 
 devDependencies:
@@ -458,6 +460,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/open-sans/4.5.14:
+    resolution: {integrity: sha512-mBXIIETBlW8q/ocuUN0hyGow2iuf75hQEHQt8R/RJ/HcphVbLg8KB7pHYGbFGDqs75W+SWvTC7JkVeAjT65BuQ==}
+    dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
     resolution: {integrity: sha512-sQXCasFk+U8lWYEe66WxRDOE9PjVz4vSM51fTu3Hw+ClTpUSQb718772vH3pyS5pShp6lvQM7SxgIDXXXmOX7w==}
